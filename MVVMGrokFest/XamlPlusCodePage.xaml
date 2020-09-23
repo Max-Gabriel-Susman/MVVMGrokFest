@@ -1,0 +1,24 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MVVMGrokFest.ViewModels"
+             x:Class="MVVMGrokFest.XamlPlusCodePage"
+             Title="XAML + Code Page">
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <Slider VerticalOptions="CenterAndExpand"
+                ValueChanged="OnSliderValueChanged"/>
+
+        <Label Text="A simple Label"
+               Font="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               x:Name="valueLabel"/>
+
+        <Button Text="Click Me!"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnButtonClicked"/>
+    </StackLayout>
+</ContentPage>

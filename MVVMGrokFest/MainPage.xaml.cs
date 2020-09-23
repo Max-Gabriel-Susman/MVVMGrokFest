@@ -13,6 +13,9 @@ namespace MVVMGrokFest
         public MainPage()
         {
             InitializeComponent();
+            // null check operator?
+
+            //BindingContext = new MainPageViewModel();
         }
     }
 }
